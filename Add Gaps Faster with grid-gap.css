@@ -1,0 +1,33 @@
+/* Add Gaps Faster with grid-gap
+Добавляйте пробелы быстрее с помощью grid-gap
+grid-gap — это сокращенное свойство для grid-row-gap и grid-column-gap из двух предыдущих задач, которое более удобно использовать. 
+Если grid-gap имеет одно значение, он создаст зазор между всеми строками и столбцами. 
+Однако, если есть два значения, оно будет использовать первое для установки промежутка между строками и второе значение для столбцов.
+<style>
+  .d1{background:LightSkyBlue;}
+  .d2{background:LightSalmon;}
+  .d3{background:PaleTurquoise;}
+  .d4{background:LightPink;}
+  .d5{background:PaleGreen;}
+
+  .container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* Only change code below this line */
+    grid-gap: 10px 20px;
+    
+    /* Only change code above this line */
+  }
+</style>
+<div class="container">
+  <div class="d1">1</div>
+  <div class="d2">2</div>
+  <div class="d3">3</div>
+  <div class="d4">4</div>
+  <div class="d5">5</div>
+</div>
